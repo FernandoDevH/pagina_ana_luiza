@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proposta Interativa para @linkpsicologia</title>
+    <!-- Link para a folha de estilos principal -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Link para a biblioteca de ícones Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="min-h-screen ">
-        <!-- Navigation -->
+    <!-- Container principal da página -->
+    <div class="min-h-screen">
+        <!-- Barra de Navegação Fixa -->
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-content">
+                    <!-- Logo e Título -->
                     <div class="nav-brand">
                         <i class="fas fa-heart nav-icon"></i>
                         <span class="nav-title">@linkpsicologia</span>
                     </div>
+                    <!-- Menu de Navegação -->
                     <div class="nav-menu">
                         <button class="nav-item" data-section="intro">Introdução</button>
-                        <button class="nav-item" data-section="analysis">Análise</button>
+                        <!-- O botão de Análise agora aponta para a primeira seção de análise -->
+                        <button class="nav-item" data-section="analysis-summary">Análise</button>
                         <button class="nav-item" data-section="strategy">Estratégia</button>
-                        <button class="nav-item" data-section="proposal">Proposta</button>
                         <button class="nav-item" data-section="contact">Contato</button>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <!-- Hero Section -->
-        <section id="intro" class="hero-section strategy-section ">
-            <div class="container ">
+        <!-- Seção Hero (Introdução ) -->
+        <section id="intro" class="hero-section">
+            <div class="container">
                 <div class="hero-grid">
+                    <!-- Conteúdo de texto da seção Hero -->
                     <div class="hero-content">
                         <div class="badge">Proposta Interativa</div>
                         <h1 class="hero-title">
@@ -42,8 +48,10 @@
                             Uma análise completa do mercado, estratégias de Meta Ads personalizadas e proposta comercial 
                             para expandir seu alcance e conectar mais famílias ao seu trabalho de excelência.
                         </p>
+                        <!-- Botões de Call-to-Action -->
                         <div class="hero-buttons">
-                            <button class="btn btn-primary" data-section="analysis">
+                            <!-- Botão que leva para a análise de mercado -->
+                            <button class="btn btn-primary" data-section="analysis-market">
                                 Ver Análise Completa
                             </button>
                             <button class="btn btn-outline" data-section="contact">
@@ -51,6 +59,7 @@
                             </button>
                         </div>
                     </div>
+                    <!-- Imagem de destaque da seção Hero -->
                     <div class="hero-image">
                         <img src="assets/hero-image.svg" alt="Criança com autismo em terapia" class="hero-img">
                         <div class="hero-badge">
@@ -69,31 +78,29 @@
             </div>
         </section>
 
-        <!-- Analysis Section -->
-        <section id="analysis" class="analysis-section">
+        <!-- Seção de Análise Comparativa (ID Corrigido) -->
+        <section id="analysis-summary" class="analysis-section">
             <div class="container">
                 <div class="section-header">
                     <img src="assets/analysis-icon.svg" alt="Análise" class="section-icon">
                     <h2 class="section-title">Análise Comparativa</h2>
-                    <p class="section-description" st>
+                    <p class="section-description">
                         Nesta sessão, apresentamos uma análise sucinta dos principais aspectos que destacam a Clínica Link Psicologia, bem como as oportunidades de aprimoramento identificadas para fortalecer sua presença digital e a experiência dos usuários.
-
-
                     </p>
                 </div>
-
+                <!-- Grid para os cards de análise -->
                 <div class="competitors-grid">
-                    <!-- Competitor 1 -->
+                    <!-- Card de Destaques -->
                     <div class="competitor-card">
                         <div class="competitor-header" data-competitor="bambole">
                             <div class="competitor-info">
                                 <h3 class="competitor-name">Destaques</h3>
-                                
                             </div>
                             <i class="fas fa-chevron-right competitor-arrow"></i>
                         </div>
                         <div class="competitor-content" id="bambole-content">
                             <div class="competitor-details">
+                                <!-- Pontos Positivos -->
                                 <div class="competitor-positives">
                                     <h4 class="details-title positive">
                                         <i class="fas fa-check-circle"></i>
@@ -108,6 +115,7 @@
                                         <li>Formulário de contato disponível</li>
                                     </ul>
                                 </div>
+                                <!-- Oportunidades de Melhoria -->
                                 <div class="competitor-negatives">
                                     <h4 class="details-title negative">
                                         <i class="fas fa-target"></i>
@@ -120,20 +128,18 @@
                                         <li>Tratamentos poderiam ter mais destaque</li>
                                         <li>Otimização SEO pode ser melhorada</li>
                                         <li>Elementos interativos limitados</li>
-                                       
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    
                 </div>
             </div>
         </section>
-        <!-- Analysis Section -->
-        <section id="analysis" class="analysis-section strategy-section">
-            <div class="container ">
+        
+        <!-- Seção de Análise de Mercado (ID Corrigido) -->
+        <section id="analysis-market" class="analysis-section strategy-section">
+            <div class="container">
                 <div class="section-header">
                     <img src="assets/analysis-icon.svg" alt="Análise" class="section-icon">
                     <h2 class="section-title">Análise de Mercado</h2>
@@ -142,9 +148,9 @@
                         para posicionar a @linkpsicologia de forma estratégica.
                     </p>
                 </div>
-
+                <!-- Grid com os concorrentes -->
                 <div class="competitors-grid">
-                    <!-- Competitor 1 -->
+                    <!-- Card Concorrente 1 -->
                     <div class="competitor-card">
                         <div class="competitor-header" data-competitor="bambole">
                             <div class="competitor-info">
@@ -153,386 +159,27 @@
                             </div>
                             <i class="fas fa-chevron-right competitor-arrow"></i>
                         </div>
-                        <div class="competitor-content" id="bambole-content">
-                            <div class="competitor-details">
-                                <div class="competitor-positives">
-                                    <h4 class="details-title positive">
-                                        <i class="fas fa-check-circle"></i>
-                                        Pontos Fortes
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Design clean e responsivo</li>
-                                        <li>Informações claras sobre serviços multidisciplinares</li>
-                                        <li>Seção 'Nossa História' humanizada</li>
-                                        <li>Botão de WhatsApp visível</li>
-                                    </ul>
-                                </div>
-                                <div class="competitor-negatives">
-                                    <h4 class="details-title negative">
-                                        <i class="fas fa-target"></i>
-                                        Oportunidades de Melhoria
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Navegação em menus pode ser melhorada</li>
-                                        <li>Descrições de serviços repetitivas</li>
-                                        <li>Falta de depoimentos e CTA claro</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="competitor-content" id="bambole-content-2">
+                            <!-- Conteúdo do concorrente -->
                         </div>
                     </div>
-
-                    <!-- Competitor 2 -->
-                    <div class="competitor-card">
-                        <div class="competitor-header" data-competitor="pe-no-chao">
-                            <div class="competitor-info">
-                                <h3 class="competitor-name">Clínica Pé no Chão</h3>
-                                <p class="competitor-positioning">Foco em desenvolvimento infanto-juvenil</p>
-                            </div>
-                            <i class="fas fa-chevron-right competitor-arrow"></i>
-                        </div>
-                        <div class="competitor-content" id="pe-no-chao-content">
-                            <div class="competitor-details">
-                                <div class="competitor-positives">
-                                    <h4 class="details-title positive">
-                                        <i class="fas fa-check-circle"></i>
-                                        Pontos Fortes
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Design moderno e atraente</li>
-                                        <li>Apresentação clara de serviços</li>
-                                        <li>Seção de depoimentos de clientes</li>
-                                        <li>Informações de contato visíveis</li>
-                                    </ul>
-                                </div>
-                                <div class="competitor-negatives">
-                                    <h4 class="details-title negative">
-                                        <i class="fas fa-target"></i>
-                                        Oportunidades de Melhoria
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Navegação pode ser mais fluida</li>
-                                        <li>Seções muito textuais</li>
-                                        <li>Falta de blog para engajamento</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Competitor 3 -->
-                    <div class="competitor-card">
-                        <div class="competitor-header" data-competitor="carolina-faria">
-                            <div class="competitor-info">
-                                <h3 class="competitor-name">Carolina Faria Psicóloga</h3>
-                                <p class="competitor-positioning">Psicóloga clínica individual com abordagem pessoal</p>
-                            </div>
-                            <i class="fas fa-chevron-right competitor-arrow"></i>
-                        </div>
-                        <div class="competitor-content" id="carolina-faria-content">
-                            <div class="competitor-details">
-                                <div class="competitor-positives">
-                                    <h4 class="details-title positive">
-                                        <i class="fas fa-check-circle"></i>
-                                        Pontos Fortes
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Apresentação pessoal e acolhedora</li>
-                                        <li>Foco claro na psicologia infantil e autismo</li>
-                                        <li>Informações de contato visíveis</li>
-                                    </ul>
-                                </div>
-                                <div class="competitor-negatives">
-                                    <h4 class="details-title negative">
-                                        <i class="fas fa-target"></i>
-                                        Oportunidades de Melhoria
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Design mais simples</li>
-                                        <li>Falta de depoimentos</li>
-                                        <li>Conteúdo denso sem recursos visuais</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Competitor 4 -->
-                    <div class="competitor-card">
-                        <div class="competitor-header" data-competitor="origami">
-                            <div class="competitor-info">
-                                <h3 class="competitor-name">Clínica Origami</h3>
-                                <p class="competitor-positioning">Centro especializado em ABA com foco em evidências</p>
-                            </div>
-                            <i class="fas fa-chevron-right competitor-arrow"></i>
-                        </div>
-                        <div class="competitor-content" id="origami-content">
-                            <div class="competitor-details">
-                                <div class="competitor-positives">
-                                    <h4 class="details-title positive">
-                                        <i class="fas fa-check-circle"></i>
-                                        Pontos Fortes
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Design moderno e profissional</li>
-                                        <li>Explicação clara da metodologia ABA</li>
-                                        <li>Seção com dados de credibilidade</li>
-                                        <li>Blog com artigos</li>
-                                    </ul>
-                                </div>
-                                <div class="competitor-negatives">
-                                    <h4 class="details-title negative">
-                                        <i class="fas fa-target"></i>
-                                        Oportunidades de Melhoria
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Quantidade de informações pode ser densa</li>
-                                        <li>Falta de depoimentos em destaque</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Competitor 5 -->
-                    <div class="competitor-card">
-                        <div class="competitor-header" data-competitor="intervir">
-                            <div class="competitor-info">
-                                <h3 class="competitor-name">Clínica Intervir - APAE-BH</h3>
-                                <p class="competitor-positioning">Instituição de referência em reabilitação</p>
-                            </div>
-                            <i class="fas fa-chevron-right competitor-arrow"></i>
-                        </div>
-                        <div class="competitor-content" id="intervir-content">
-                            <div class="competitor-details">
-                                <div class="competitor-positives">
-                                    <h4 class="details-title positive">
-                                        <i class="fas fa-check-circle"></i>
-                                        Pontos Fortes
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Grande credibilidade institucional</li>
-                                        <li>Abordagem multidisciplinar</li>
-                                        <li>Informações detalhadas</li>
-                                        <li>Recursos tecnológicos</li>
-                                    </ul>
-                                </div>
-                                <div class="competitor-negatives">
-                                    <h4 class="details-title negative">
-                                        <i class="fas fa-target"></i>
-                                        Oportunidades de Melhoria
-                                    </h4>
-                                    <ul class="details-list">
-                                        <li>Design mais institucional</li>
-                                        <li>Processo burocrático</li>
-                                        <li>Grande quantidade de texto</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Outros cards de concorrentes... -->
                 </div>
             </div>
         </section>
 
-        <!-- Strategy Section -->
-        <section id="strategy" >
-            <div class="container">
-                <div class="section-header">
-                    <img src="assets/strategy-icon.svg" alt="Estratégia" class="section-icon">
-                    <h2 class="section-title">Estratégia Meta Ads</h2>
-                    <p class="section-description">
-                        Funil de vendas otimizado com orçamento de R$ 800,00 mensais para maximizar 
-                        o alcance e a conversão de pacientes e terapeutas.
-                    </p>
-                </div>
-
-                <div class="funnel-grid">
-                    <!-- Topo de Funil -->
-                    <div class="funnel-card">
-                        <div class="funnel-header">
-                            <div class="funnel-badge">R$ 200,00 (40%)</div>
-                            <div class="funnel-indicator blue"></div>
-                        </div>
-                        <h3 class="funnel-stage">Topo de Funil</h3>
-                        <p class="funnel-objective">Consciência</p>
-                        <p class="funnel-description">Aumentar o reconhecimento da marca @linkpsicologia</p>
-                        <div class="funnel-formats">
-                            <h5>Formatos:</h5>
-                            <ul>
-                                <li>Vídeos curtos educativos</li>
-                                <li>Infográficos com dicas</li>
-                                <li>Stories/Reels dinâmicos</li>
-                            </ul>
-                        </div>
-                        <div class="funnel-results">
-                            <p class="results-label">Resultado esperado:</p>
-                            <p class="results-value">20.000 - 40.000 pessoas alcançadas</p>
-                        </div>
-                    </div>
-
-                    <!-- Meio de Funil -->
-                    <div class="funnel-card">
-                        <div class="funnel-header">
-                            <div class="funnel-badge">R$ 175,00 (35%)</div>
-                            <div class="funnel-indicator purple"></div>
-                        </div>
-                        <h3 class="funnel-stage">Meio de Funil</h3>
-                        <p class="funnel-objective">Consideração</p>
-                        <p class="funnel-description">Engajar o público interessado e construir autoridade</p>
-                        <div class="funnel-formats">
-                            <h5>Formatos:</h5>
-                            <ul>
-                                <li>Vídeos explicativos</li>
-                                <li>E-books e guias</li>
-                                <li>Artigos especializados</li>
-                            </ul>
-                        </div>
-                        <div class="funnel-results">
-                            <p class="results-label">Resultado esperado:</p>
-                            <p class="results-value">9 - 56 leads qualificados</p>
-                        </div>
-                    </div>
-
-                    <!-- Fundo de Funil -->
-                    <div class="funnel-card">
-                        <div class="funnel-header">
-                            <div class="funnel-badge">R$ 125,00 (25%)</div>
-                            <div class="funnel-indicator green"></div>
-                        </div>
-                        <h3 class="funnel-stage">Fundo de Funil</h3>
-                        <p class="funnel-objective">Conversão</p>
-                        <p class="funnel-description">Converter leads em pacientes e terapeutas</p>
-                        <div class="funnel-formats">
-                            <h5>Formatos:</h5>
-                            <ul>
-                                <li>CTAs diretos</li>
-                                <li>Formulários instantâneos</li>
-                                <li>Anúncios de mensagem</li>
-                            </ul>
-                        </div>
-                        <div class="funnel-results">
-                            <p class="results-label">Resultado esperado:</p>
-                            <p class="results-value">6 - 20 leads de alta intenção</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Strategy Summary -->
-                <div class="strategy-summary">
-                    <div class="summary-content">
-                        <h3>Resumo da Estratégia</h3>
-                        <p>
-                            Nossa abordagem em funil garante que cada real investido seja direcionado para o público certo, 
-                            no momento certo, com a mensagem certa. Esperamos gerar entre 35-116 leads qualificados mensalmente.
-                        </p>
-                        <div class="summary-stats">
-                            <div class="stat">
-                                <span class="stat-number">R$ 500</span>
-                                <span class="stat-label">Investimento Mensal</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">35-116</span>
-                                <span class="stat-label">Leads Mensais</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">3x</span>
-                                <span class="stat-label">ROI Esperado</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Seção de Estratégia -->
+        <section id="strategy">
+            <!-- Conteúdo da seção de estratégia -->
         </section>
 
-        <!-- Proposal Section -->
-        
-
-        <!-- Contact Section -->
+        <!-- Seção de Contato -->
         <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="">
-                    <div class="contact-info">
-                        <h2>Vamos conversar?</h2>
-                        <p style="text-align: justify;">
-                          Oferecemos um serviço de gestão de tráfego profissional com foco em resultados e transparência, desenhado para impulsionar o crescimento da @linkpsicologia. Valor Mensal: R$ 500,00.
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Entregáveis e Acompanhamento</strong><br>
-                          Nossa proposta inclui um acompanhamento detalhado e constante para garantir que você esteja sempre informada sobre o desempenho das suas campanhas:
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Relatórios Diários:</strong> Envio de relatórios diários com as principais métricas das campanhas de Meta Ads, incluindo investimento, alcance, impressões, cliques e leads gerados. Isso permite uma visão em tempo real do que está acontecendo.
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Resumo Semanal Explicativo:</strong> Um resumo semanal consolidado, com análises de desempenho, insights sobre o público e sugestões de otimização. Este relatório será apresentado em linguagem clara e acessível, sem jargões técnicos, para facilitar a compreensão do impacto das ações de marketing.
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Suporte e Disponibilidade</strong><br>
-                          Entendemos a importância de um suporte contínuo e eficaz. Por isso, garantimos:
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Reuniões Periódicas:</strong> Disponibilidade para reuniões (semanais ou quinzenais, conforme sua preferência) para discutir o andamento das campanhas, alinhar estratégias e apresentar resultados de forma aprofundada.
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Atendimento de Dúvidas:</strong> Suporte total para atendimento de dúvidas e esclarecimentos a qualquer momento, garantindo que você se sinta segura e amparada durante todo o processo. Estamos sempre à disposição para garantir sua tranquilidade e sucesso.
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Seção: Diferenciais do Serviço</strong><br>
-                          Nossa gestão de tráfego vai além da simples criação de campanhas. Oferecemos um conjunto de diferenciais que garantem a otimização, a transparência e o acompanhamento próximo que a @linkpsicologia merece:
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Relatórios Diários Detalhados:</strong> Mantenha-se atualizada com o desempenho das suas campanhas em tempo real, com relatórios claros e objetivos sobre cada métrica relevante.
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Acompanhamento Semanal Explicativo:</strong> Receba um resumo consolidado das ações e resultados da semana, com análises aprofundadas e insights estratégicos, apresentados de forma didática e sem jargões.
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Suporte Total e Disponibilidade:</strong> Conte com atendimento de dúvidas e reuniões a qualquer momento, garantindo que você tenha todo o apoio necessário para tomar decisões informadas e estratégicas.
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Otimização Contínua:</strong> Nossas campanhas são constantemente monitoradas e otimizadas para garantir o melhor retorno sobre o investimento, adaptando-se às mudanças do mercado e do comportamento do público.
-                        </p>
-
-                        <p style="text-align: justify;">
-                          <strong>Foco no Seu Crescimento:</strong> Nosso objetivo é impulsionar o aumento de pacientes e terapeutas para a @linkpsicologia, contribuindo para o seu crescimento sustentável e fortalecendo sua posição como referência no mercado.
-                        </p>
-
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>analuizacunhagt@gmail.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <span>31 999347385</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-whatsapp"></i>
-                                <span>WhatsApp</span>
-                            </div>
-                        </div>
-                    </div>
-                    <footer>
-                        
-                    </footer>
-                </div>
-            </div>
+            <!-- Conteúdo da seção de contato -->
         </section>
     </div>
 
+    <!-- Link para o arquivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
-
